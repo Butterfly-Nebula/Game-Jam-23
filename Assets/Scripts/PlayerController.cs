@@ -18,12 +18,16 @@ public class PlayerController : MonoBehaviour
 
     bool canMove;
 
+    public GameObject destroyTrigger;
+
     // Start is called before the first frame update
     void Start()
     {
         activeMoveSpeed = moveSpeed;
 
         canMove = true;
+
+        destroyTrigger.SetActive(false);
 
     }
 
@@ -46,6 +50,7 @@ public class PlayerController : MonoBehaviour
             if (dashCoolCounter <= 0 && dashCounter <= 0)
             {
                 canMove = false;
+                destroyTrigger.SetActive(true);
                 activeMoveSpeed = dashSpeed;
                 dashCounter = dashLength;
             }
@@ -60,6 +65,7 @@ public class PlayerController : MonoBehaviour
                 activeMoveSpeed = moveSpeed;
                 dashCoolCounter = dashCooldown;
                 canMove = true;
+                destroyTrigger.SetActive(false);
             }
         }
 
