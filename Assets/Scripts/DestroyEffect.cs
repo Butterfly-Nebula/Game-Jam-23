@@ -4,17 +4,13 @@ using Microsoft.Unity.VisualStudio.Editor;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
+
 
 public class DestroyEffect : MonoBehaviour
 {   
-    public float maxX;
-    public float minX;
-    public float maxY;
-    public float minY;
-    //public float Radius = 1;
+
     public GameObject Player2;
-    private bool Dead = false;
+    public bool Dead = false;
     public GameObject Collision;
     public GameObject Drop;
     void Start()
@@ -24,10 +20,7 @@ public class DestroyEffect : MonoBehaviour
 
     void Update()
     {
-        if(Dead == true)
-        {
-            Spawn();
-        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
@@ -40,14 +33,5 @@ public class DestroyEffect : MonoBehaviour
             Dead = true;
             return;
         }
-    }
-    void Spawn()
-    {
-        float X = Random.Range(minX, maxY);
-        float Y = Random.Range(minY,maxY);
-
-        Player2 = Instantiate(Player2, transform.position + new Vector3(X, Y, 0), transform.rotation);
-
-        //Vector3 randomPos = Random.insideUnitCircle * Radius;
     }
 }
