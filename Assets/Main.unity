@@ -398,6 +398,7 @@ GameObject:
   - component: {fileID: 1010422831}
   - component: {fileID: 1010422830}
   - component: {fileID: 1010422832}
+  - component: {fileID: 1010422833}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -487,6 +488,24 @@ MonoBehaviour:
   dashLength: 0.5
   dashCooldown: 1
   destroyTrigger: {fileID: 1522587364}
+--- !u!114 &1010422833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010422828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb015cd08509d24c880e12f43667fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxX: 24
+  minX: -15
+  maxY: 9
+  minY: -9
+  Player2: {fileID: 1092484738067046325, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
+  destroyEffect: {fileID: 1808520335}
 --- !u!1 &1441748101
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +772,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1092484738067046329, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
   m_PrefabInstance: {fileID: 1092484738196108451}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1808520335 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1092484738067046328, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
+  m_PrefabInstance: {fileID: 1092484738196108451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac28bccddec413040b51f9f6b3e8fd86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2128230095
 GameObject:
   m_ObjectHideFlags: 0
