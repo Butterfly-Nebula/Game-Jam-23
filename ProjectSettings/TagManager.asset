@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Water
   - UI
+  - coll
   layers:
   - Default
   - TransparentFX

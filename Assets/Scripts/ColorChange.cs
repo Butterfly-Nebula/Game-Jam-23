@@ -8,6 +8,7 @@ public class ColorChange : MonoBehaviour
     public GameObject Player;
     public DestroyEffect destroyEffect;
     private Renderer rend;
+    public Renderer rendMat;
     public Color colorToTurnTo;
     void Start()
     {
@@ -17,6 +18,8 @@ public class ColorChange : MonoBehaviour
 
     void Update()
     {
+        rendMat.material.color = colorToTurnTo;
+        
         if (destroyEffect.Dead == true)
         {
         RandomColor();

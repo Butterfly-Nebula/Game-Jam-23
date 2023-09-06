@@ -38,15 +38,11 @@ public class DestroyEffect : MonoBehaviour
         if (destroyTrigger.activeInHierarchy == true)
         {
             //playerController.activeMoveSpeed = -20;
+             Instantiate(Collision, transform.position, Quaternion.identity);
+            Instantiate(Drop, transform.position, transform.rotation);
             Teleport();
         }
-        else
-        {
-            Instantiate(Collision, transform.position, Quaternion.identity);
-            Instantiate(Drop, transform.position, transform.rotation);
-            
-
-        }
+ 
     }
 
     void Spawn()
