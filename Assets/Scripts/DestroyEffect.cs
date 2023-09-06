@@ -67,7 +67,7 @@ public class DestroyEffect : MonoBehaviour
         //yield return new WaitForSeconds(0.1f);
         anotherPlayer.transform.position = new Vector3(X, Y, 0);
         //yield return new WaitForSeconds(0.1f);
-        
+        Dead = true;
 
     }
 }
