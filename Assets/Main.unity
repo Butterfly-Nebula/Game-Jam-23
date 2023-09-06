@@ -877,7 +877,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1092484738067046324, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
       propertyPath: dashSpeed
-      value: 0
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1092484738067046324, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
       propertyPath: m_Enabled
@@ -885,7 +885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1092484738067046324, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
       propertyPath: moveSpeed
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1092484738067046324, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
       propertyPath: destroyTrigger
