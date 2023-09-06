@@ -76,15 +76,33 @@ public class PlayerController : MonoBehaviour
 
         rb2d.velocity = moveInput * activeMoveSpeed;
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (dashCoolCounter <= 0 && dashCounter <= 0)
+        if (name == "Player1")
+        { 
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                canMove = false;
-                destroyTrigger.SetActive(true);
-                activeMoveSpeed = dashSpeed;
-                dashCounter = dashLength;
-                rb2d.velocity = new Vector2(dirX, dirY) * 3;
+                if (dashCoolCounter <= 0 && dashCounter <= 0)
+                {
+                    canMove = false;
+                    destroyTrigger.SetActive(true);
+                    activeMoveSpeed = dashSpeed;
+                    dashCounter = dashLength;
+                    rb2d.velocity = new Vector2(dirX, dirY) * 3;
+                }
+            }
+        }
+
+        if (name == "Player2")
+        { 
+            if (Input.GetKeyDown(KeyCode.RightShift))
+            {
+                if (dashCoolCounter <= 0 && dashCounter <= 0)
+                {
+                    canMove = false;
+                    destroyTrigger.SetActive(true);
+                    activeMoveSpeed = dashSpeed;
+                    dashCounter = dashLength;
+                    rb2d.velocity = new Vector2(dirX, dirY) * 3;
+                }
             }
         }
 
