@@ -13,6 +13,10 @@ public class DestroyEffect : MonoBehaviour
     public bool Dead = false;
     public GameObject Collision;
     public GameObject Drop;
+
+    public GameObject destroyTrigger;
+    public PlayerController playerController;
+
     void Start()
     {
 
@@ -25,7 +29,11 @@ public class DestroyEffect : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (destroyTrigger.activeInHierarchy == true)
+        {
+            playerController.activeMoveSpeed = -20;
+        }
+        else
         {
             Instantiate(Collision, transform.position, Quaternion.identity);
             Instantiate(Drop, transform.position, transform.rotation);

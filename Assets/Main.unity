@@ -484,6 +484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rb2d: {fileID: 1010422830}
+  activeMoveSpeed: 0
   dashSpeed: 30
   dashLength: 0.5
   dashCooldown: 1
@@ -914,6 +915,14 @@ PrefabInstance:
       propertyPath: Player2
       value: 
       objectReference: {fileID: 1092484738067046325, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
+    - target: {fileID: 1092484738067046328, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
+      propertyPath: destroyTrigger
+      value: 
+      objectReference: {fileID: 477701337}
+    - target: {fileID: 1092484738067046328, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1092484738196108452}
     - target: {fileID: 1092484738067046329, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -964,3 +973,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
+--- !u!114 &1092484738196108452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1092484738067046324, guid: db5ca680ed318b5478b9f69b140b2a4a, type: 3}
+  m_PrefabInstance: {fileID: 1092484738196108451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963b809ba8dfc884588ae45eb43c1580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

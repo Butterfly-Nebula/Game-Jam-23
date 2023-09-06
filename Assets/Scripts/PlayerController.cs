@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb2d;
     private Vector2 moveInput;
 
-    private float activeMoveSpeed;
+    public float activeMoveSpeed;
     public float dashSpeed;
 
     public float dashLength = .5f, dashCooldown = 1f;
