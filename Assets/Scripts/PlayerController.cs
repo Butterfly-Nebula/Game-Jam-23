@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private float dashCounter;
     private float dashCoolCounter;
 
-    bool canMove;
+    public bool canMove;
 
     public GameObject destroyTrigger;
 

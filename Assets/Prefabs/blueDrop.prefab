@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8449874404644139894}
   - component: {fileID: 8444205507800850111}
   m_Layer: 0
-  m_Name: Square
+  m_Name: blueDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
