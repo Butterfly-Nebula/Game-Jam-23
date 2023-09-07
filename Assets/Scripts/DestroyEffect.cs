@@ -24,14 +24,20 @@ public class DestroyEffect : MonoBehaviour
     public PlayerController playerController;
 
     public AudioSource audioSource;
+
+    private Animator animator;
     //public AudioClip audioClip;
 
     //public ScoreScript scoreScript;
+
+    private int rand;
+    public Sprite[] Sprite_Pic;
 
     void Start()
     {
         playerController = anotherPlayer.GetComponent<PlayerController>();
         //scoreScript = canvas.GetComponent<ScoreScript>();
+        animator = anotherPlayer.GetComponent<Animator>();
     }
 
     void Update()
@@ -42,13 +48,17 @@ public class DestroyEffect : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
+        animator.SetTrigger("TrDead");
         if (destroyTrigger.activeInHierarchy == true)
         {
+            
             Teleport();
             //playerController.activeMoveSpeed = -20;
             Instantiate(Collision, transform.position, Quaternion.identity);
             Instantiate(Drop, transform.position, transform.rotation);
             audioSource.Play();    //OneShot(audioClip);
+            //Dead = false;
+            
 
             //scoreScript.ScoreNum += 1;
            //scoreScript.MyscoreText.text = "Score: " + scoreScript.ScoreNum;
@@ -69,6 +79,7 @@ public class DestroyEffect : MonoBehaviour
 
     void Teleport()
     {
+        
         float X = Random.Range(minX, maxY);
         float Y = Random.Range(minY,maxY);
         
@@ -77,5 +88,11 @@ public class DestroyEffect : MonoBehaviour
         //yield return new WaitForSeconds(0.1f);
         Dead = true;
 
+    }
+
+    void Splash()
+    {
+        rand = Random.Range(0, Sprite_Pic.Length);
+        GetComponent<SpriteRenderer>().sprite = Sprite_Pic[rand];
     }
 }
