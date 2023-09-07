@@ -49,7 +49,7 @@ public class DestroyEffect : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) 
     {
         animator.SetTrigger("TrDead");
-        if (destroyTrigger.activeInHierarchy == true)
+        if (destroyTrigger.activeInHierarchy == true && other.gameObject.CompareTag("Player"))
         {
             
             Teleport();
