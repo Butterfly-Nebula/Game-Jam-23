@@ -40,7 +40,7 @@ public class ColorChange : MonoBehaviour
         {
             Color cooldownColor = new Color(colorToTurnTo.r - 0.24f, colorToTurnTo.g - 0.24f , colorToTurnTo.b - 0.24f);
             rend.material.color = cooldownColor;
-            Invoke("ChangeColor", 0.75f);
+            Invoke("ChangeColor", 1f);
         }
         
     }
