@@ -18,7 +18,7 @@ public class Countdown : MonoBehaviour
     {
             if(timeLeft > 0)
             {
-                timeLeft -= Time.deltaTime * 2f;
+                timeLeft -= Time.deltaTime * 2.5f;
                 timerText.text = (timeLeft).ToString("0");
             }
 

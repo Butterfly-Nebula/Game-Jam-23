@@ -39,13 +39,13 @@ public class PlayerController : MonoBehaviour
     {
         if (name == "Player1")
         {
-            transform.Translate(Vector2.right* 7.5f * Time.deltaTime);
+            transform.Translate(Vector2.right* 9f * Time.deltaTime);
         }
         if (name == "Player2")
         {
-            transform.Translate(Vector2.left * 7.5f * Time.deltaTime);
+            transform.Translate(Vector2.left * 9f * Time.deltaTime);
         }       
-        Invoke("EndStart", 1.4f);
+        Invoke("EndStart", 1.15f);
     }
 
     void EndStart()
