@@ -43,8 +43,10 @@ public class ScoreScript : MonoBehaviour
     {
         if (destroyEffect.Dead == true)
         {
+            Debug.Log("score script");
             ScoreNum += 1;
             MyscoreText.text = "Score: " + ScoreNum;
+            destroyEffect.Dead = false;
         }
 
         if (ScoreNum == winScore - 1)

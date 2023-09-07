@@ -31,8 +31,9 @@ public class ColorChange2 : MonoBehaviour
         if (destroyEffect.Dead == true)
         {
         RandomColor();
-        ChangeColor();  
-        destroyEffect.Dead = false;
+        ChangeColor();
+        Debug.Log("Dead");
+        //destroyEffect.Dead = false;
 
         }
 
