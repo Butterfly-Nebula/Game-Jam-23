@@ -32,7 +32,6 @@ public class ColorChange2 : MonoBehaviour
         {
         RandomColor();
         ChangeColor();
-        Debug.Log("Dead");
         //destroyEffect.Dead = false;
 
         }
