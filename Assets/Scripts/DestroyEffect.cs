@@ -18,6 +18,7 @@ public class DestroyEffect : MonoBehaviour
     public bool Dead = false;
     public GameObject Collision;
     public GameObject Drop;
+    public GameObject Splash;
 
     //public GameObject canvas;
     public GameObject destroyTrigger;
@@ -59,6 +60,7 @@ public class DestroyEffect : MonoBehaviour
             //playerController.activeMoveSpeed = -20;
             Instantiate(Collision, transform.position, Quaternion.identity);
             Instantiate(Drop, transform.position, transform.rotation);
+            Instantiate(Splash, anotherPlayer.transform.position, transform.rotation);
             audioSource.Play();    //OneShot(audioClip);
             //Dead = false;
             
@@ -86,9 +88,4 @@ public class DestroyEffect : MonoBehaviour
 
     }
 
-    void Splash()
-    {
-        rand = Random.Range(0, Sprite_Pic.Length);
-        GetComponent<SpriteRenderer>().sprite = Sprite_Pic[rand];
-    }
 }
