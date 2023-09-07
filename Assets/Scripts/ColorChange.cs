@@ -31,18 +31,19 @@ public class ColorChange : MonoBehaviour
         if (destroyEffect.Dead == true)
         {
         RandomColor();
-        ChangeColor();  
+        ChangeColor();
+        Debug.Log("Dead");
         //destroyEffect.Dead = false;
 
         }
 
         if (playerController.dashCoolCounter > 0)
         {
-            Color cooldownColor = new Color(colorToTurnTo.r - 0.24f, colorToTurnTo.g - 0.24f , colorToTurnTo.b - 0.24f);
+            Color cooldownColor = new Color(colorToTurnTo.r - 0.24f, colorToTurnTo.g - 0.24f, colorToTurnTo.b - 0.24f);
             rend.material.color = cooldownColor;
-            Invoke("ChangeColor", 0.75f);
+            Invoke("ChangeColor", 1f);
         }
-        
+
     }
 
     void RandomColor()
