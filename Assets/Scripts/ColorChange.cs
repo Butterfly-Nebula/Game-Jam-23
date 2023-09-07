@@ -7,7 +7,7 @@ public class ColorChange : MonoBehaviour
 {   
     public GameObject Player;
     public DestroyEffect destroyEffect;
-    private Renderer rend;
+    public Renderer rend;
     public Renderer rendMat;
     //public Renderer dropMat;
     public Color colorToTurnTo;

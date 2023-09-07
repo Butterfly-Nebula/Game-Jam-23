@@ -12,6 +12,8 @@ public class SplashColor : MonoBehaviour
     public float maxY;
     public float minY;
     //public float TimeBetweenSpawn;
+
+    private ColorChange colorChange;
     private float SpawnTime;
     //private DestroyEffect destroyEffect;
     
@@ -20,7 +22,8 @@ public class SplashColor : MonoBehaviour
     {
         dropMat = Drop.GetComponent<Renderer>();
         ChangeColor();
-        dropMat.material.color = colorToTurnTo;
+        colorChange = GameObject.FindObjectOfType<ColorChange>();
+        dropMat.material.color = colorChange.colorToTurnTo;
         //destroyEffect = GameObject.FindObjectOfType<DestroyEffect>();
         
 
@@ -63,12 +66,13 @@ public class SplashColor : MonoBehaviour
 
     void ChangeColor()
     {
-        colorToTurnTo = new Color32(
+        /*colorToTurnTo = new Color32(
         (byte)Random.Range(0, 256),
         (byte)Random.Range(0, 256),
         (byte)Random.Range(0, 256),
         255
-        );
+        );*/
+
 
     }
 }
