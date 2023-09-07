@@ -14,11 +14,11 @@ public class DropColor2 : MonoBehaviour
         dropMat = Drop2.GetComponent<Renderer>();
         //colorChange = GetComponent<ColorChange>();
         colorChange2 = GameObject.FindObjectOfType<ColorChange2>();
+        dropMat.material.color = colorChange2.colorToTurnTo;
     }
 
     // Update is called once per frame
     void Update()
     {
-        dropMat.material.color = colorChange2.colorToTurnTo;
     }
 }
