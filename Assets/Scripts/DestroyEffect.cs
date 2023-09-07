@@ -25,11 +25,13 @@ public class DestroyEffect : MonoBehaviour
     void Start()
     {
         playerController = anotherPlayer.GetComponent<PlayerController>();
+        
+        
     }
 
     void Update()
     {
-
+        
 
     }
 

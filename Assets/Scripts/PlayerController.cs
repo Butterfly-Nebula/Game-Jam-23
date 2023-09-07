@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
                     destroyTrigger.SetActive(true);
                     activeMoveSpeed = dashSpeed;
                     dashCounter = dashLength;
-                    rb2d.velocity = new Vector2(dirX, dirY) * 3;
+                    //rb2d.velocity = new Vector2(dirX, dirY) * 3;
                 }
             }
         }
@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
                     destroyTrigger.SetActive(true);
                     activeMoveSpeed = dashSpeed;
                     dashCounter = dashLength;
-                    rb2d.velocity = new Vector2(dirX, dirY) * 3;
+                    //rb2d.velocity = new Vector2(dirX, dirY) * 3;
                 }
             }
         }

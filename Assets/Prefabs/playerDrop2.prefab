@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8449874404644139894}
   - component: {fileID: 8444205507800850111}
+  - component: {fileID: 1995769340729372569}
   m_Layer: 0
   m_Name: playerDrop2
   m_TagString: Untagged
@@ -52,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,3 +85,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1995769340729372569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528016105521334584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f5095e3aff3494ca44aff054f9a18b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Drop2: {fileID: 528016105521334584}
+  dropMat: {fileID: 8444205507800850111}

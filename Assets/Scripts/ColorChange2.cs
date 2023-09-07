@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class ColorChange : MonoBehaviour
+public class ColorChange2 : MonoBehaviour
 {   
-    public GameObject Player;
+    public GameObject Player2;
     public DestroyEffect destroyEffect;
     private Renderer rend;
     public Renderer rendMat;
@@ -15,7 +15,7 @@ public class ColorChange : MonoBehaviour
     //public DropColor dropColor;
     void Start()
     {
-        destroyEffect = Player.GetComponent<DestroyEffect>();
+        destroyEffect = Player2.GetComponent<DestroyEffect>();
         rend = GetComponent<Renderer>();
         //dropMat = GetComponent<Renderer>();
         //dropColor.dropMat = dropColor.GetComponent<Renderer>();
