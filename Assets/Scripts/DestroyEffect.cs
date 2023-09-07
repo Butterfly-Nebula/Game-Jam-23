@@ -29,7 +29,6 @@ public class DestroyEffect : MonoBehaviour
     {
         playerController = anotherPlayer.GetComponent<PlayerController>();
         scoreScript = canvas.GetComponent<ScoreScript>();
-        
     }
 
     void Update()
@@ -46,7 +45,8 @@ public class DestroyEffect : MonoBehaviour
              Instantiate(Collision, transform.position, Quaternion.identity);
             Instantiate(Drop, transform.position, transform.rotation);
 
-            scoreScript.scoreValue += 1;
+            scoreScript.ScoreNum += 1;
+            scoreScript.MyscoreText.text = "Score: " + scoreScript.ScoreNum;
 
             Teleport();
         }

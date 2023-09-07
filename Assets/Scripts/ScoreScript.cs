@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour
 {
-    public int scoreValue = 0;
-    Text score;
+    public Text MyscoreText;
+    public int ScoreNum;
 
     // Start is called before the first frame update
     void Start()
     {
-        score = GetComponent < Text > ();
+        ScoreNum = 0;
+        MyscoreText.text = "Score: " + ScoreNum;
     }
 
     // Update is called once per frame
     void Update()
     {
-        score.text = "Player1: " + scoreValue;
 
     }
 }
