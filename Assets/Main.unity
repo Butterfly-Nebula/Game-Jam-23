@@ -53518,6 +53518,7 @@ GameObject:
   - component: {fileID: 546196589}
   - component: {fileID: 546196592}
   - component: {fileID: 546196591}
+  - component: {fileID: 546196593}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -53535,7 +53536,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2041801498}
   m_RootOrder: 0
@@ -53717,6 +53718,26 @@ MonoBehaviour:
   rendMat: {fileID: 546196591}
   colorToTurnTo: {r: 0, g: 0, b: 0, a: 0}
   playerController: {fileID: 2041801495}
+--- !u!95 &546196593
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546196587}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2635504a25b4a4b488e6dd295fc2b415, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &600576047
 GameObject:
   m_ObjectHideFlags: 0
@@ -64333,6 +64354,7 @@ GameObject:
   - component: {fileID: 1010422834}
   - component: {fileID: 1010422835}
   - component: {fileID: 1010422836}
+  - component: {fileID: 1010422837}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -64350,7 +64372,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1522587365}
   - {fileID: 2128230096}
@@ -64426,6 +64448,7 @@ MonoBehaviour:
   destroyTrigger: {fileID: 1522587364}
   playerController: {fileID: 1010422832}
   audioSource: {fileID: 1836766283}
+  Sprite_Pic: []
 --- !u!114 &1010422834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64469,6 +64492,26 @@ MonoBehaviour:
   MyscoreText: {fileID: 1732931489}
   ScoreNum: 0
   destroyEffect: {fileID: 1010422833}
+--- !u!95 &1010422837
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010422828}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1a84adf173fca64e9d945a551d34ac9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1149228294
 GameObject:
   m_ObjectHideFlags: 0
@@ -152221,6 +152264,7 @@ GameObject:
   - component: {fileID: 2041801495}
   - component: {fileID: 2041801499}
   - component: {fileID: 2041801500}
+  - component: {fileID: 2041801501}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -152283,7 +152327,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 546196588}
   - {fileID: 477701338}
@@ -152314,6 +152358,7 @@ MonoBehaviour:
   destroyTrigger: {fileID: 477701337}
   playerController: {fileID: 2041801495}
   audioSource: {fileID: 1836766283}
+  Sprite_Pic: []
 --- !u!58 &2041801500
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -152330,6 +152375,26 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &2041801501
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041801494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 90ee3bb57bd448640a8ea1e080115d0c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &2054020094
 GameObject:
   m_ObjectHideFlags: 0
@@ -157420,7 +157485,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 8177471321811730583, guid: 87aaca0a643d54397ba969dab4fc8875, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
