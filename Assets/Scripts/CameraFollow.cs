@@ -41,7 +41,7 @@ void Awake ()
 void Start () 
 {
     camDistance = 10.0f;
-    bounds = 11.0f;
+    bounds = 13.0f;
 }
 
 // Update is called once per frame
