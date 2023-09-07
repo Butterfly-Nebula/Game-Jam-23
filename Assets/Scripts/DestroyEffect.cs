@@ -23,6 +23,9 @@ public class DestroyEffect : MonoBehaviour
     public GameObject destroyTrigger;
     public PlayerController playerController;
 
+    public AudioSource audioSource;
+    //public AudioClip audioClip;
+
     //public ScoreScript scoreScript;
 
     void Start()
@@ -45,6 +48,7 @@ public class DestroyEffect : MonoBehaviour
             //playerController.activeMoveSpeed = -20;
             Instantiate(Collision, transform.position, Quaternion.identity);
             Instantiate(Drop, transform.position, transform.rotation);
+            audioSource.Play();    //OneShot(audioClip);
 
             //scoreScript.ScoreNum += 1;
            //scoreScript.MyscoreText.text = "Score: " + scoreScript.ScoreNum;
