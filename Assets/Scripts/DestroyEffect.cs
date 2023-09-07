@@ -19,13 +19,16 @@ public class DestroyEffect : MonoBehaviour
     public GameObject Collision;
     public GameObject Drop;
 
+    public GameObject canvas;
     public GameObject destroyTrigger;
     public PlayerController playerController;
+
+    public ScoreScript scoreScript;
 
     void Start()
     {
         playerController = anotherPlayer.GetComponent<PlayerController>();
-        
+        scoreScript = canvas.GetComponent<ScoreScript>();
         
     }
 
@@ -42,6 +45,9 @@ public class DestroyEffect : MonoBehaviour
             //playerController.activeMoveSpeed = -20;
              Instantiate(Collision, transform.position, Quaternion.identity);
             Instantiate(Drop, transform.position, transform.rotation);
+
+            scoreScript.scoreValue += 1;
+
             Teleport();
         }
  
