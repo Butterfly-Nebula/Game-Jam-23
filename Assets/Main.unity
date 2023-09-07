@@ -6070,7 +6070,6 @@ MonoBehaviour:
   canvas: {fileID: 0}
   destroyTrigger: {fileID: 1522587364}
   playerController: {fileID: 1010422832}
-  scoreScript: {fileID: 0}
 --- !u!114 &1010422834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6113,6 +6112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyscoreText: {fileID: 1732931489}
   ScoreNum: 0
+  destroyEffect: {fileID: 1010422833}
 --- !u!1 &1441748101
 GameObject:
   m_ObjectHideFlags: 0
@@ -6461,7 +6461,7 @@ RectTransform:
   m_Children:
   - {fileID: 1732931488}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6649,7 +6649,6 @@ MonoBehaviour:
   canvas: {fileID: 0}
   destroyTrigger: {fileID: 477701337}
   playerController: {fileID: 2041801495}
-  scoreScript: {fileID: 0}
 --- !u!58 &2041801500
 CircleCollider2D:
   m_ObjectHideFlags: 0

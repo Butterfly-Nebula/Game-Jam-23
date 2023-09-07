@@ -23,12 +23,12 @@ public class DestroyEffect : MonoBehaviour
     public GameObject destroyTrigger;
     public PlayerController playerController;
 
-    public ScoreScript scoreScript;
+    //public ScoreScript scoreScript;
 
     void Start()
     {
         playerController = anotherPlayer.GetComponent<PlayerController>();
-        scoreScript = canvas.GetComponent<ScoreScript>();
+        //scoreScript = canvas.GetComponent<ScoreScript>();
     }
 
     void Update()
@@ -41,14 +41,14 @@ public class DestroyEffect : MonoBehaviour
     {
         if (destroyTrigger.activeInHierarchy == true)
         {
+            Teleport();
             //playerController.activeMoveSpeed = -20;
-             Instantiate(Collision, transform.position, Quaternion.identity);
+            Instantiate(Collision, transform.position, Quaternion.identity);
             Instantiate(Drop, transform.position, transform.rotation);
 
-            scoreScript.ScoreNum += 1;
-            scoreScript.MyscoreText.text = "Score: " + scoreScript.ScoreNum;
+            //scoreScript.ScoreNum += 1;
+           //scoreScript.MyscoreText.text = "Score: " + scoreScript.ScoreNum;
 
-            Teleport();
         }
  
     }
