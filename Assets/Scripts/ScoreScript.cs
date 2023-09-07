@@ -35,6 +35,7 @@ public class ScoreScript : MonoBehaviour
         fire.SetActive(false);
         playerOneText.SetActive(false);
         playerTwoText.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -52,21 +53,20 @@ public class ScoreScript : MonoBehaviour
         }
         
         if (ScoreNum == winScore)
-        {
-            
-
+        {                      
             if (name == "Player1")
             {
-                Invoke("PlayerOneWin", 1f);
-                //StartSlowMotion();
+                Invoke("PlayerOneWin", 0f);
+                
             }
             
             if (name == "Player2")
             {
-                Invoke("PlayerTwoWin", 1f);
-                //StartSlowMotion();
+                Invoke("PlayerTwoWin", 0f);
+                
             }
         }
+
     }
     void StartSlowMotion()
     {
@@ -81,13 +81,13 @@ public class ScoreScript : MonoBehaviour
     }
     void PlayerOneWin()
     {
-        StopSlowMotion();
         playerOneText.SetActive(true);
+        StartSlowMotion();
     }
 
     void PlayerTwoWin()
     {
-        StopSlowMotion();
         playerTwoText.SetActive(true);
+        StartSlowMotion();
     }
 }
