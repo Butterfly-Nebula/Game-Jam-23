@@ -12,6 +12,8 @@ public class ColorChange2 : MonoBehaviour
     //public Renderer dropMat;
     public Color colorToTurnTo;
 
+    public PlayerController playerController;
+
     //public DropColor dropColor;
     void Start()
     {
@@ -33,7 +35,14 @@ public class ColorChange2 : MonoBehaviour
         destroyEffect.Dead = false;
 
         }
-        
+
+        if (playerController.dashCoolCounter > 0)
+        {
+            Color cooldownColor = new Color(colorToTurnTo.r - 0.24f, colorToTurnTo.g - 0.24f, colorToTurnTo.b - 0.24f);
+            rend.material.color = cooldownColor;
+            Invoke("ChangeColor", 0.75f);
+        }
+
     }
 
     void RandomColor()

@@ -21,20 +21,48 @@ public class PlayerController : MonoBehaviour
 
     public GameObject destroyTrigger;
 
+    public bool isStart;
+
     // Start is called before the first frame update
     void Start()
     {
         activeMoveSpeed = moveSpeed;
 
+        canMove = false;
+
+        destroyTrigger.SetActive(true);
+        
+        isStart = true;
+    }
+
+    void BeginStart()
+    {
+        if (name == "Player1")
+        {
+            transform.Translate(Vector2.right* 7.5f * Time.deltaTime);
+        }
+        if (name == "Player2")
+        {
+            transform.Translate(Vector2.left * 7.5f * Time.deltaTime);
+        }       
+        Invoke("EndStart", 1.4f);
+    }
+
+    void EndStart()
+    {
+        isStart = false;
         canMove = true;
-
         destroyTrigger.SetActive(false);
-
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isStart == true)
+        {
+            Invoke("BeginStart", 0f);
+        }
+        
         if (name == "Player1")
         {
             if (canMove)
