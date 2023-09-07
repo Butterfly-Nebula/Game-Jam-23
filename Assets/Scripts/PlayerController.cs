@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
 
     public bool isStart;
 
+    public GameObject textBox;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +47,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector2.left * 9f * Time.deltaTime);
         }       
-        Invoke("EndStart", 1.15f);
+        Invoke("EndStart", 1.13f);
     }
 
     void EndStart()
@@ -53,6 +55,7 @@ public class PlayerController : MonoBehaviour
         isStart = false;
         canMove = true;
         destroyTrigger.SetActive(false);
+        textBox.SetActive(false);
     }
 
     // Update is called once per frame
