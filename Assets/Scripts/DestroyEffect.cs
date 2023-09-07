@@ -67,15 +67,7 @@ public class DestroyEffect : MonoBehaviour
  
     }
 
-    void Spawn()
-    {
-        float X = Random.Range(minX, maxY);
-        float Y = Random.Range(minY,maxY);
 
-        anotherPlayer.transform.position = new Vector3(X, Y, 0);
-
-        //Vector3 randomPos = Random.insideUnitCircle * Radius;
-    }
 
     void Teleport()
     {
