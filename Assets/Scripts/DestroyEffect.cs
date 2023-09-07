@@ -19,7 +19,7 @@ public class DestroyEffect : MonoBehaviour
     public GameObject Collision;
     public GameObject Drop;
 
-    public GameObject canvas;
+    //public GameObject canvas;
     public GameObject destroyTrigger;
     public PlayerController playerController;
 

@@ -5394,7 +5394,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 915d46d756f944948bff80fc43f98951, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6067,7 +6067,6 @@ MonoBehaviour:
   Dead: 0
   Collision: {fileID: 6563259209691288825, guid: 5a3e457cfaa932541aae8b00ce94e311, type: 3}
   Drop: {fileID: 528016105521334584, guid: 7b3a0f29d39ce614b96bde1a4643fae7, type: 3}
-  canvas: {fileID: 0}
   destroyTrigger: {fileID: 1522587364}
   playerController: {fileID: 1010422832}
 --- !u!114 &1010422834
@@ -6646,7 +6645,6 @@ MonoBehaviour:
   Dead: 0
   Collision: {fileID: 6563259209691288825, guid: 5a3e457cfaa932541aae8b00ce94e311, type: 3}
   Drop: {fileID: 528016105521334584, guid: 1503a8bb2f0b41941bdf5f8a03334fd7, type: 3}
-  canvas: {fileID: 0}
   destroyTrigger: {fileID: 477701337}
   playerController: {fileID: 2041801495}
 --- !u!58 &2041801500
@@ -6721,7 +6719,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 915d46d756f944948bff80fc43f98951, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
