@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject textBox;
 
+    public GameObject textBox2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +35,10 @@ public class PlayerController : MonoBehaviour
         canMove = false;
 
         destroyTrigger.SetActive(true);
-        
-        isStart = true;
+
+        textBox2.SetActive(false);
+
+        isStart = true;     
     }
 
     void BeginStart()
@@ -47,7 +51,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector2.left * 9f * Time.deltaTime);
         }       
-        Invoke("EndStart", 1.13f);
+        Invoke("EndStart", 1.15f);
     }
 
     void EndStart()
@@ -56,6 +60,13 @@ public class PlayerController : MonoBehaviour
         canMove = true;
         destroyTrigger.SetActive(false);
         textBox.SetActive(false);
+        textBox2.SetActive(true);
+        Invoke("TextRemover", 1f);
+    }
+
+    void TextRemover()
+    {
+        textBox2.SetActive(false);
     }
 
     // Update is called once per frame
