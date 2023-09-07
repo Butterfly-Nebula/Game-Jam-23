@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector2.left * 9f * Time.deltaTime);
         }       
-        Invoke("EndStart", 1.15f);
+        Invoke("EndStart", 1.17f);
     }
 
     void EndStart()
