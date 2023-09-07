@@ -57,7 +57,6 @@ public class ColorChange2 : MonoBehaviour
 
     void ChangeColor()
     {
-        RandomColor();
         rend.material.color = colorToTurnTo;
     }
 }
