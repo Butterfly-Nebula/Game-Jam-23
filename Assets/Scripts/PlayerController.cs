@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float dashLength = .5f, dashCooldown = 1f;
 
     private float dashCounter;
-    private float dashCoolCounter;
+    public float dashCoolCounter;
 
     public bool canMove;
 
@@ -122,6 +122,7 @@ public class PlayerController : MonoBehaviour
         if (dashCoolCounter > 0)
         {
             dashCoolCounter -= Time.deltaTime;
+
         }
     }
 
