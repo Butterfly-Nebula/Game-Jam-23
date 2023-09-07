@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8449874404644139894}
   - component: {fileID: 8444205507800850111}
   - component: {fileID: 8692483443521604128}
+  - component: {fileID: 1233579943869667949}
   m_Layer: 0
   m_Name: playerDrop1
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 528016105521334584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.4625616, y: -0.5265351, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,3 +100,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Drop: {fileID: 528016105521334584}
   dropMat: {fileID: 8444205507800850111}
+--- !u!95 &1233579943869667949
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528016105521334584}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a4e06441f981a048ab2c78c0ecd8fa2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

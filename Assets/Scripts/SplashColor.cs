@@ -20,6 +20,7 @@ public class SplashColor : MonoBehaviour
     {
         dropMat = Drop.GetComponent<Renderer>();
         destroyEffect = GameObject.FindObjectOfType<DestroyEffect>();
+        
 
         //InvokeRepeating("Spawn", 0, 10);
     }
