@@ -13,13 +13,15 @@ public class SplashColor : MonoBehaviour
     public float minY;
     //public float TimeBetweenSpawn;
     private float SpawnTime;
-    private DestroyEffect destroyEffect;
+    //private DestroyEffect destroyEffect;
     
     // Start is called before the first frame update
     void Start()
     {
         dropMat = Drop.GetComponent<Renderer>();
-        destroyEffect = GameObject.FindObjectOfType<DestroyEffect>();
+        ChangeColor();
+        dropMat.material.color = colorToTurnTo;
+        //destroyEffect = GameObject.FindObjectOfType<DestroyEffect>();
         
 
         //InvokeRepeating("Spawn", 0, 10);
@@ -40,12 +42,12 @@ public class SplashColor : MonoBehaviour
             Spawn();
             SpawnTime = 100f;
         }*/
-        dropMat.material.color = colorToTurnTo;
+        
 
-        if(destroyEffect.Dead == true)
+        /*if(destroyEffect.Dead == true)
         {
             Spawn();
-        }
+        }*/
     }
 
     void Spawn()
