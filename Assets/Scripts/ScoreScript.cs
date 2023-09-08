@@ -67,7 +67,14 @@ public class ScoreScript : MonoBehaviour
                 Invoke("PlayerTwoWin", 0f);
                 
             }
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+                Application.LoadLevel(0);
+            }
         }
+
+
 
     }
     void StartSlowMotion()
