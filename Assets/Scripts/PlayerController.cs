@@ -94,15 +94,15 @@ public class PlayerController : MonoBehaviour
                 {
                     dirY = activeMoveSpeed;
                 }
-                else if (Input.GetKey(KeyCode.K))
+                if (Input.GetKey(KeyCode.K))
                 {
                     dirY = -activeMoveSpeed;
                 }
-                else if (Input.GetKey(KeyCode.J))
+                if (Input.GetKey(KeyCode.J))
                 {
                     dirX = - activeMoveSpeed;
                 }
-                else if (Input.GetKey(KeyCode.L))
+                if (Input.GetKey(KeyCode.L))
                 {
                     dirX = activeMoveSpeed;
                 }
