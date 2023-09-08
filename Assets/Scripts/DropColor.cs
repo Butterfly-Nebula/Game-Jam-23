@@ -5,7 +5,7 @@ using UnityEngine;
 public class DropColor : MonoBehaviour
 {
     public GameObject Drop;
-    public Renderer dropMat;
+    private Renderer dropMat;
     private ColorChange colorChange;
     
     // Start is called before the first frame update

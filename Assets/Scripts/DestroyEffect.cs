@@ -26,6 +26,7 @@ public class DestroyEffect : MonoBehaviour
     public AudioSource audioSource;
 
     private Animator animator;
+    
     //public AudioClip audioClip;
 
     //public ScoreScript scoreScript;
@@ -68,7 +69,7 @@ public class DestroyEffect : MonoBehaviour
            //scoreScript.MyscoreText.text = "Score: " + scoreScript.ScoreNum;
 
         }
- 
+
     }
 
 
