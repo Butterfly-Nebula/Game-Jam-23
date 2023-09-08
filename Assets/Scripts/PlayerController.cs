@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour
             {
                 dirX = Input.GetAxisRaw("Horizontal") * activeMoveSpeed;
                 dirY = Input.GetAxisRaw("Vertical") * activeMoveSpeed;
+    
             }
         }
         if (name == "Player2" && Input.anyKey)
@@ -93,15 +94,15 @@ public class PlayerController : MonoBehaviour
                 {
                     dirY = activeMoveSpeed;
                 }
-                if (Input.GetKey(KeyCode.K))
+                else if (Input.GetKey(KeyCode.K))
                 {
                     dirY = -activeMoveSpeed;
                 }
-                if (Input.GetKey(KeyCode.J))
+                else if (Input.GetKey(KeyCode.J))
                 {
                     dirX = - activeMoveSpeed;
                 }
-                if (Input.GetKey(KeyCode.L))
+                else if (Input.GetKey(KeyCode.L))
                 {
                     dirX = activeMoveSpeed;
                 }
@@ -120,7 +121,7 @@ public class PlayerController : MonoBehaviour
 
         if (name == "Player1")
         { 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 if (dashCoolCounter <= 0 && dashCounter <= 0)
                 {

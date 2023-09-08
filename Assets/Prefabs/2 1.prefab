@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7525478873329179096}
   - component: {fileID: 7806278730216649519}
   - component: {fileID: 6539291638766852416}
-  - component: {fileID: 2884450869782925460}
+  - component: {fileID: 2217849194351308230}
   m_Layer: 0
   m_Name: 2 1
   m_TagString: Untagged
@@ -106,7 +106,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &2884450869782925460
+--- !u!114 &2217849194351308230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,8 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Drop: {fileID: 4140666267489198834}
   colorToTurnTo: {r: 0, g: 0, b: 0, a: 0}
-  maxX: 17
-  minX: -13
-  maxY: 7
-  minY: -7
-  TimeBetweenSpawn: 100000
+  maxX: 0
+  minX: 0
+  maxY: 0
+  minY: 0
