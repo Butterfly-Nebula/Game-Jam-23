@@ -26,6 +26,7 @@ public class DestroyEffect : MonoBehaviour
     public AudioSource audioSource;
 
     private Animator animator;
+    
     //public AudioClip audioClip;
 
     //public ScoreScript scoreScript;
@@ -60,6 +61,10 @@ public class DestroyEffect : MonoBehaviour
             Instantiate(Collision, transform.position, Quaternion.identity);
             Instantiate(Drop, transform.position, transform.rotation);
             Instantiate(Splash, anotherPlayer.transform.position, transform.rotation);
+
+            playerController.textBox2.SetActive(true);
+            Invoke("TextRemover", 1f);
+
             audioSource.Play();    //OneShot(audioClip);
             //Dead = false;
             
@@ -68,7 +73,7 @@ public class DestroyEffect : MonoBehaviour
            //scoreScript.MyscoreText.text = "Score: " + scoreScript.ScoreNum;
 
         }
- 
+
     }
 
 
@@ -87,4 +92,8 @@ public class DestroyEffect : MonoBehaviour
 
     }
 
+    void TextRemover()
+    {
+        playerController.textBox2.SetActive(false);
+    }
 }

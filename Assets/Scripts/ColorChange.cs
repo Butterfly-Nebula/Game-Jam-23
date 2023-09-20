@@ -12,6 +12,8 @@ public class ColorChange : MonoBehaviour
     //public Renderer dropMat;
     public Color colorToTurnTo;
 
+    public Color colorParticle;
+
     public PlayerController playerController;
 
     //public DropColor dropColor;
@@ -46,9 +48,16 @@ public class ColorChange : MonoBehaviour
 
     }
 
-    void RandomColor()
+    public void RandomColor()
     {
         colorToTurnTo = new Color32(
+        (byte)Random.Range(0, 256),
+        (byte)Random.Range(0, 256),
+        (byte)Random.Range(0, 256),
+        255
+        );
+        
+        colorParticle = new Color32(
         (byte)Random.Range(0, 256),
         (byte)Random.Range(0, 256),
         (byte)Random.Range(0, 256),
