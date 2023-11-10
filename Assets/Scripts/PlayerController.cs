@@ -83,7 +83,6 @@ public class PlayerController : MonoBehaviour
             {
                 dirX = Input.GetAxisRaw("Horizontal") * activeMoveSpeed;
                 dirY = Input.GetAxisRaw("Vertical") * activeMoveSpeed;
-    
             }
         }
         if (name == "Player2" && Input.anyKey)
@@ -121,7 +120,7 @@ public class PlayerController : MonoBehaviour
 
         if (name == "Player1")
         { 
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (dashCoolCounter <= 0 && dashCounter <= 0)
                 {
