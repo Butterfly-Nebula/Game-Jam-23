@@ -8,6 +8,7 @@ public class DropColor : MonoBehaviour
     private Renderer dropMat;
     private ColorChange colorChange;
     
+    // Start is called before the first frame update
     void Start()
     {
         dropMat = Drop.GetComponent<Renderer>();
@@ -16,6 +17,7 @@ public class DropColor : MonoBehaviour
         //dropMat.material.color = colorChange.colorToTurnTo;
     }
 
+    // Update is called once per frame
     void Update()
     {
         dropMat.material.color = colorChange.colorToTurnTo;

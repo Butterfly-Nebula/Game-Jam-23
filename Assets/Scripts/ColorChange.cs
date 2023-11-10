@@ -9,26 +9,34 @@ public class ColorChange : MonoBehaviour
     public DestroyEffect destroyEffect;
     public Renderer rend;
     public Renderer rendMat;
-
+    //public Renderer dropMat;
     public Color colorToTurnTo;
+
     public Color colorParticle;
+
     public PlayerController playerController;
 
+    //public DropColor dropColor;
     void Start()
     {
         destroyEffect = Player.GetComponent<DestroyEffect>();
         rend = GetComponent<Renderer>();
-
+        //dropMat = GetComponent<Renderer>();
+        //dropColor.dropMat = dropColor.GetComponent<Renderer>();
     }
+
     void Update()
     {
         rendMat.material.color = colorToTurnTo;
+        //dropColor.dropMat.material.color = colorToTurnTo;
         
         if (destroyEffect.Dead == true)
         {
         RandomColor();
         ChangeColor();
         Debug.Log("Dead");
+        //destroyEffect.Dead = false;
+
         }
 
         if (playerController.dashCoolCounter > 0)
