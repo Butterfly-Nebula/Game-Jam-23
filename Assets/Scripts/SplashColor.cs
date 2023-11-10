@@ -72,7 +72,5 @@ public class SplashColor : MonoBehaviour
         (byte)Random.Range(0, 256),
         255
         );*/
-
-
     }
 }
