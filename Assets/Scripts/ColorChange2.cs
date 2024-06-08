@@ -7,8 +7,8 @@ public class ColorChange2 : MonoBehaviour
 {   
     public GameObject Player2;
     public DestroyEffect destroyEffect;
-    public Renderer rend;
-    public Renderer rendMat;
+    public Renderer rend2;
+    public Renderer rendMat2;
     //public Renderer dropMat;
     public Color colorToTurnTo;
 
@@ -18,14 +18,14 @@ public class ColorChange2 : MonoBehaviour
     void Start()
     {
         destroyEffect = Player2.GetComponent<DestroyEffect>();
-        rend = GetComponent<Renderer>();
+        rend2 = GetComponent<Renderer>();
         //dropMat = GetComponent<Renderer>();
         //dropColor.dropMat = dropColor.GetComponent<Renderer>();
     }
 
     void Update()
     {
-        rendMat.material.color = colorToTurnTo;
+        rendMat2.material.color = colorToTurnTo;
         //dropColor.dropMat.material.color = colorToTurnTo;
         
         if (destroyEffect.Dead == true)
@@ -39,7 +39,7 @@ public class ColorChange2 : MonoBehaviour
         if (playerController.dashCoolCounter > 0)
         {
             Color cooldownColor = new Color(colorToTurnTo.r - 0.24f, colorToTurnTo.g - 0.24f, colorToTurnTo.b - 0.24f);
-            rend.material.color = cooldownColor;
+            rend2.material.color = cooldownColor;
             Invoke("ChangeColor", 1f);
         }
 
@@ -57,6 +57,6 @@ public class ColorChange2 : MonoBehaviour
 
     void ChangeColor()
     {
-        rend.material.color = colorToTurnTo;
+        rend2.material.color = colorToTurnTo;
     }
 }

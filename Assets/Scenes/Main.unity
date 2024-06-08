@@ -53883,8 +53883,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player2: {fileID: 2041801494}
   destroyEffect: {fileID: 2041801499}
-  rend: {fileID: 546196589}
-  rendMat: {fileID: 546196591}
+  rend2: {fileID: 546196589}
+  rendMat2: {fileID: 546196591}
   colorToTurnTo: {r: 0, g: 0, b: 0, a: 0}
   playerController: {fileID: 2041801495}
 --- !u!1 &600576047
@@ -64672,6 +64672,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1149228294
 GameObject:
   m_ObjectHideFlags: 0
@@ -152771,6 +152772,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2041801502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157880,7 +157882,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 8177471321811730583, guid: 87aaca0a643d54397ba969dab4fc8875, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -158015,7 +158017,7 @@ MonoBehaviour:
   destroyEffect: {fileID: 1010422833}
   rend: {fileID: 2128230097}
   rendMat: {fileID: 2128230101}
-  colorToTurnTo: {r: 0, g: 0, b: 0, a: 0}
+  colorToTurnTo: {r: 0.6792453, g: 0.40690637, b: 0.40690637, a: 0}
   playerController: {fileID: 1010422832}
 --- !u!1 &2133393748
 GameObject:
